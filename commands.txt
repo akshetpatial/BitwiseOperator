@@ -54,10 +54,10 @@ Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
 $ git add src/
 gi
 Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
-$ git commit -m "Created the file OddEven.java"
-[master 750a411] Created the file OddEven.java
+$ git commit -m "Created the file com.akshet.OddEven.java"
+[master 750a411] Created the file com.akshet.OddEven.java
  1 file changed, 7 insertions(+)
- create mode 100644 src/OddEven.java
+ create mode 100644 src/com.akshet.OddEven.java
 
 Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
 $ git status
@@ -70,7 +70,7 @@ $ git log -5 --all --graph
 | Author: AKSHET PATIAL <akshet.patial@gmail.com>
 | Date:   Mon Mar 27 11:47:45 2023 +0530
 |
-|     Created the file OddEven.java
+|     Created the file com.akshet.OddEven.java
 |
 * commit c412e246aba0ec90908373e91fbd648235b4bd72
 | Author: AKSHET PATIAL <akshet.patial@gmail.com>
@@ -118,7 +118,7 @@ $ git log -5 --all --graph
 | Author: AKSHET PATIAL <akshet.patial@gmail.com>
 | Date:   Mon Mar 27 11:47:45 2023 +0530
 |
-|     Created the file OddEven.java
+|     Created the file com.akshet.OddEven.java
 |
 * commit c412e246aba0ec90908373e91fbd648235b4bd72
 | Author: AKSHET PATIAL <akshet.patial@gmail.com>
