@@ -28,6 +28,22 @@ public class ithBit {
         return ans;
     }
 
+    public static int FindSetRightBit(int num){
+        int count=1;
+        int temp=num;
+
+        while(temp!=0){
+            int check = temp & 1;
+            if(check==0) {
+                temp = temp >> 1;
+                count++;
+            }
+            else
+                return count;
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         System.out.println("Enter any number: ");
         Scanner scan = new Scanner(System.in);
@@ -54,5 +70,10 @@ public class ithBit {
         int check_2 = ResetBit(num,bit_2);
         System.out.println("The "+bit_2+"th bit is set");
         System.out.println("The new number is: "+check_2);
+
+        System.out.println(" Find the position of Right most Set Bit: ");
+
+        int check_3 = FindSetRightBit(num);
+        System.out.println("The Right most Set Bit position is: "+ check_3);
     }
 }
