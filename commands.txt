@@ -146,3 +146,177 @@ nothing to commit, working tree clean
 Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
 $ touch commands.txt
 
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   out/production/BitWiseOperators/com/akshet/ithBit.class
+        modified:   src/com/akshet/ithBit.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/com/akshet/MagicNumber.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add out/production/BitWiseOperators/com/akshet/ithBit.class src/com/akshet/
+MagicNumber.java  ithBit.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add out/production/BitWiseOperators/com/akshet/ithBit.class src/com/akshet/MagicNumber.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   out/production/BitWiseOperators/com/akshet/ithBit.class
+        new file:   src/com/akshet/MagicNumber.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/com/akshet/ithBit.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git restore
+fatal: you must specify path(s) to restore
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git restore --staged
+fatal: you must specify path(s) to restore
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git restore --staged src/com/akshet/MagicNumber.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   out/production/BitWiseOperators/com/akshet/ithBit.class
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/com/akshet/ithBit.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/com/akshet/MagicNumber.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add src/com/akshet/ithBit.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   out/production/BitWiseOperators/com/akshet/ithBit.class
+        modified:   src/com/akshet/ithBit.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/com/akshet/MagicNumber.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git commit -m "Added the find right most Set Bit method in ithBit.java file"
+[master 3004b86] Added the find right most Set Bit method in ithBit.java file
+ 2 files changed, 21 insertions(+)
+ rewrite out/production/BitWiseOperators/com/akshet/ithBit.class (64%)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/com/akshet/MagicNumber.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git commit -m "Created the file MagicNumber.java"
+[master c0374b9] Created the file MagicNumber.java
+ 1 file changed, 23 insertions(+)
+ create mode 100644 src/com/akshet/MagicNumber.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git log -4 --all --graph
+* commit c0374b943a2ca61732ec0a867cc5f1e5e1a24c1b (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 30 01:45:34 2023 +0530
+|
+|     Created the file MagicNumber.java
+|
+* commit 3004b86f086d3803e38e49f8456e2c203b0ebaa5
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 30 01:45:03 2023 +0530
+|
+|     Added the find right most Set Bit method in ithBit.java file
+|
+* commit 96886befb246f8da898fdaa3a92520557bbb2137 (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Wed Mar 29 23:09:27 2023 +0530
+|
+|     Added the SetBit and ResetBit method
+|
+* commit eea9e5593c4a5b94f531a4bf553d314c4af7937f
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Tue Mar 28 23:55:32 2023 +0530
+|
+|     Created the FindUnique.java file
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git log -4 --all --graph
+* commit c0374b943a2ca61732ec0a867cc5f1e5e1a24c1b (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 30 01:45:34 2023 +0530
+|
+|     Created the file MagicNumber.java
+|
+* commit 3004b86f086d3803e38e49f8456e2c203b0ebaa5
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 30 01:45:03 2023 +0530
+|
+|     Added the find right most Set Bit method in ithBit.java file
+|
+* commit 96886befb246f8da898fdaa3a92520557bbb2137 (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Wed Mar 29 23:09:27 2023 +0530
+|
+|     Added the SetBit and ResetBit method
+|
+* commit eea9e5593c4a5b94f531a4bf553d314c4af7937f
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Tue Mar 28 23:55:32 2023 +0530
+|
+|     Created the FindUnique.java file
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git push origin master
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (18/18), 2.40 KiB | 223.00 KiB/s, done.
+Total 18 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/akshetpatial/BitwiseOperator.git
+   96886be..c0374b9  master -> master
+
