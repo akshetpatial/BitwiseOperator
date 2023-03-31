@@ -320,3 +320,85 @@ remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
 To https://github.com/akshetpatial/BitwiseOperator.git
    96886be..c0374b9  master -> master
 
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/BitWiseOperators/com/akshet/RangeXor.class
+        src/com/akshet/RangeXor.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git commit -m "Created the RangeXor.java class"
+[master 90a31b9] Created the RangeXor.java class
+ 2 files changed, 48 insertions(+)
+ create mode 100644 out/production/BitWiseOperators/com/akshet/RangeXor.class
+ create mode 100644 src/com/akshet/RangeXor.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git log - 5 --all --graph
+fatal: ambiguous argument '5': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git log -5 --all --graph
+* commit 90a31b971ca051f884e98e4dcded8eeb426b72d3 (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Fri Mar 31 12:00:25 2023 +0530
+|
+|     Created the RangeXor.java class
+|
+* commit 4b111826f704e5ef356b904ab5a43fc354d2e9c9 (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 30 11:47:41 2023 +0530
+|
+|     Implemented the Magic Number Logic
+|
+* commit bb3979fdc7de9f5662a4062777e5c309e36f8426
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 30 01:48:17 2023 +0530
+|
+|     Added commands related to adding some methods in ithBit.java file
+|
+* commit c0374b943a2ca61732ec0a867cc5f1e5e1a24c1b
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 30 01:45:34 2023 +0530
+|
+|     Created the file MagicNumber.java
+|
+* commit 3004b86f086d3803e38e49f8456e2c203b0ebaa5
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 30 01:45:03 2023 +0530
+|
+|     Added the find right most Set Bit method in ithBit.java file
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git push origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (12/12), 2.22 KiB | 455.00 KiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/akshetpatial/BitwiseOperator.git
+   4b11182..90a31b9  master -> master
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
