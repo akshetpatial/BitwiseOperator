@@ -34,7 +34,9 @@ public class flippingImage {
          while(end_col>=0){
             rowEle[start]=rowElement[end_col];
             // Invert the Bits here
-             rowEle[start]= rowEle[start]==1?0:1;
+             //rowEle[start]= rowEle[start]==1?0:1;
+            // Or we can also use Xor as Xor of any bit is its compliment
+             rowEle[start]=rowEle[start]^1;
              end_col--;
              start++;
         }
