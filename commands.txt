@@ -440,4 +440,151 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   out/production/BitWiseOperators/com/akshet/math/Primenumber.class
+        modified:   src/com/akshet/math/Primenumber.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/BitWiseOperators/com/akshet/math/SquareRoot.class
+        src/com/akshet/math/SquareRoot.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add out/production/BitWiseOperators/com/akshet/math/Primenumber.class
+out/ src/
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add out/production/BitWiseOperators/com/akshet/math/Primenumber.class
+out/ src/
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add out/production/BitWiseOperators/com/akshet/math/Primenumber.class
+out/ src/
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add out/production/BitWiseOperators/com/akshet/math/Primenumber.class src/com/akshet/math/Primenumber.java
+g
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git commit -m "Made some minor changes"
+[master 470c464] Made some minor changes
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/BitWiseOperators/com/akshet/math/SquareRoot.class
+        src/com/akshet/math/SquareRoot.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master))
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   out/production/BitWiseOperators/com/akshet/math/SquareRoot.class
+        new file:   src/com/akshet/math/SquareRoot.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git commit -m "Created the SquareRoot.java file"
+[master 68de5e1] Created the SquareRoot.java file
+ 2 files changed, 70 insertions(+)
+ create mode 100644 out/production/BitWiseOperators/com/akshet/math/SquareRoot.class
+ create mode 100644 src/com/akshet/math/SquareRoot.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git push origi master
+fatal: 'origi' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git push origin master
+Enumerating objects: 40, done.
+Counting objects: 100% (40/40), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (28/28), 4.14 KiB | 302.00 KiB/s, done.
+Total 28 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 5 local objects.
+To https://github.com/akshetpatial/BitwiseOperator.git
+   88c59d1..68de5e1  master -> master
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git log -5 --all --graph
+* commit 68de5e1373d6dc5c9184c3a03cea5527a589ebc8 (HEAD -> master, origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Apr 2 01:07:08 2023 +0530
+|
+|     Created the SquareRoot.java file
+|
+* commit 470c464d144dff7b496f715aab35ff2993d1ab5e
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Apr 2 01:05:54 2023 +0530
+|
+|     Made some minor changes
+|
+* commit 88c59d19802b4c50aa75872ea18b9f1a258deced
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Apr 1 02:42:23 2023 +0530
+|
+|     Added commands related to Primeumber class
+|
+* commit d58f12a24c2a9196e07792a85f5ebeeb1a261b60
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Apr 1 02:41:04 2023 +0530
+|
+:...skipping...
+* commit 68de5e1373d6dc5c9184c3a03cea5527a589ebc8 (HEAD -> master, origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Apr 2 01:07:08 2023 +0530
+|
+|     Created the SquareRoot.java file
+|
+* commit 470c464d144dff7b496f715aab35ff2993d1ab5e
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Apr 2 01:05:54 2023 +0530
+|
+|     Made some minor changes
+|
+* commit 88c59d19802b4c50aa75872ea18b9f1a258deced
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Apr 1 02:42:23 2023 +0530
+|
+|     Added commands related to Primeumber class
+|
+* commit d58f12a24c2a9196e07792a85f5ebeeb1a261b60
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Apr 1 02:41:04 2023 +0530
+|
+|     Added the com.akshet.math package and created the class math and use sievesieve
+|
+* commit 2bd015d765d79f475232eaeee53f359d3cf2969f
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Fri Mar 31 14:31:19 2023 +0530
+|
+|     Added one more way to find the compliment/inverting the bit
 
