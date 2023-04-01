@@ -25,8 +25,9 @@ public class Primenumber {
         return -1;
     }
 
+
     // Here the Space complexity is O(N) as we are taking one extra array to check the Prime
-    // Time Complexity is
+    // Time Complexity is O(N * log(logN)) this log(logN) comes from tailor series
     public static void Prime_Sieve(int num, boolean[] prime){
 
         for(int i=2;i*i<=num;i++){
