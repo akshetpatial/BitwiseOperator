@@ -588,3 +588,75 @@ $ git log -5 --all --graph
 |
 |     Added one more way to find the compliment/inverting the bit
 
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/com/akshet/math/HCFLCM.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/BitWiseOperators/com/akshet/math/HCFLCM.class
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git commit -m "Added the LCM and HCF method"
+[master d862415] Added the LCM and HCF method
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+ create mode 100644 out/production/BitWiseOperators/com/akshet/math/HCFLCM.class
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git commit -m "Created the HCFLCM.java file"
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git log -5 --all --graph
+* commit d862415ce96105aef19a3c1b8673fa0afd1a8d0f (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Apr 2 14:13:56 2023 +0530
+|
+|     Added the LCM and HCF method
+|
+* commit 46d5c2902b8f2d690750d1419c5be3c1fca0501e (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Apr 2 13:44:36 2023 +0530
+|
+|     Created the HCFLCM.java file
+|
+* commit 99bafdb85b8e8e0407995cd15a16a9a572b4d5b1
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Apr 2 01:08:50 2023 +0530
+|
+|     Added commands related to SquareRoot.java file
+|
+* commit 68de5e1373d6dc5c9184c3a03cea5527a589ebc8
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Apr 2 01:07:08 2023 +0530
+|
+|     Created the SquareRoot.java file
+|
+* commit 470c464d144dff7b496f715aab35ff2993d1ab5e
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Apr 2 01:05:54 2023 +0530
+|
+|     Made some minor changes
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/BitWiseOperator (master)
+$ git push origin master
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (14/14), 2.19 KiB | 373.00 KiB/s, done.
+Total 14 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/akshetpatial/BitwiseOperator.git
+   46d5c29..d862415  master -> master
+
